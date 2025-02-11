@@ -1,0 +1,415 @@
+/*  =============
+    css reset
+    =============*/
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* FORMATAÇÃO */
+
+/* Estilos gerais do corpo */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #333; /* Cor do texto */
+    line-height: 1.6;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+/* Estilos da seção principal */
+section {
+    border-radius: 8px;
+    /* background: #bef0b7;   */
+}
+
+/*FORMATAÇÃO SECTION BANNER*/
+
+.banner {
+    width: 100%;
+    height: auto; /* Ajusta a altura automaticamente de acordo com a imagem */
+    text-align: center;
+}
+.banner h1 {
+    color: #19490a;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5rem;
+    margin: 2vw 0 0 0;
+    font-weight: bold;
+}
+.banner p{
+    font-size: x-large;
+}
+.banner a {
+    text-decoration: none;
+    color: #3b773b;
+    }
+
+/* Estilos dos parágrafos */
+section p {
+    margin-bottom: 20px;
+    display: flex;
+    margin: 3vw;
+}
+
+/* Estilos das listas */
+section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    display: flex;
+}
+
+section li {
+    margin-bottom: 15px; 
+    font-family: 'Raleway', sans-serif;
+}
+
+section strong {
+    color: #004d00; /* Verde mais escuro para destacar */
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+}
+
+/*FORMATAÇÃO SECTION BENEFÍCIOS*/
+
+.beneficio {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer; /* interatividade */
+    transition: background-color 0.3s;
+}
+
+.beneficio:hover {
+    background-color: #e0f7e0; /* Cor quando o mouse */
+}
+
+.beneficio-texto {
+    display: none; /* Esconde o texto dos benefícios */
+}
+
+.beneficio.active .beneficio-texto {
+    display: block; /* Mostra o texto se a classe active estiver presente */
+}
+
+.beneficio-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    max-width: 1200px; /* Define uma largura máxima para evitar que os itens fiquem muito espalhados */
+    margin: 0 auto; /* Centraliza o container em relação à página */
+}
+
+.fortalecimento {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    max-width: 1200px; /* Define uma largura máxima para evitar que os itens fiquem muito espalhados */
+    margin: 0 auto; /* Centraliza o container em relação à página */
+}
+
+/*FORMATAÇÃO CARROSSEL*/
+
+:root {
+    --gap-width: 30px; /* Espaçamento entre os slides */
+    --slide-width: 300px; /* Largura do slide */
+    --slide-height: 150px; /* Altura do slide */
+    --slide-bg-color: rgba(18, 92, 251, 0.52);
+    --overlay-bg-color: rgba(0, 0, 0, 0.5);
+    --overlay-text-color: #fff;
+    --overlay-transition: opacity 0.3s ease;
+    --border-radius: 20px;
+  }
+  
+  .carousel {
+    overflow: hidden;
+    width: 80%; /* Ajuste o tamanho do carrossel */
+    margin: 0 auto; /* Centraliza o carrossel */
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: var(--gap-width); /* Usa a variável para espaçamento */
+    animation: scroll var(--scroll-duration) linear infinite;
+  }
+  
+  .slide {
+    background: var(--slide-bg-color);
+    flex: 0 0 var(--slide-width); /* Define a largura dos slides */
+    height: var(--slide-height); /* Define a altura dos slides */
+    border-radius: var(--border-radius);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: var(--overlay-bg-color);
+    color: var(--overlay-text-color);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: var(--overlay-transition);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide:hover .overlay {
+    opacity: 1;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-1 * var(--total-width)));
+    }
+  }
+  
+  .carousel:hover .carousel-track {
+    animation-play-state: paused;
+  }
+  .carousel-title {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo do título */
+    color: #fff; /* Cor do texto (ajuste conforme necessário) */
+  }
+  
+  .carousel {
+    overflow: hidden;
+    width: 80%; /* Ajuste conforme necessário */
+    margin: 20px auto 0; /* Adiciona margem superior para espaçamento */
+    padding: 2vw 0 2vw 0;
+  }
+
+.link {
+    text-align: center;
+    padding: 0 40vw 0 40vw;
+}
+
+/*FORMATAÇÃO FOOTER*/
+
+.footer {
+    margin: 2vw 0 0 0;
+    padding: 40px 0;
+    background-color: #3b773b;
+    color: white;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer li {
+    display: inline-block; 
+    padding: 0 10px;
+}
+
+.footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul a:hover {
+    opacity: 1;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer .social > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer .social > a:hover {
+    opacity: 0.9;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+.footer .footer-break{
+  height:2px;
+  border-width:0;
+  color:white;
+  background-color:white
+    }
+    .footer a span {
+        color: white;
+        margin: 1vw 50vw 0 50vw;
+        font-size: x-large;
+    }
+    .footer p.nomes {
+        text-align: center;
+        margin: 1vw 0 0 0;
+        opacity: 0.8;
+    }
+img{
+    width: 5vw;
+  
+}
+strong{
+    font-size: larger;
+}
+
+/* CSS media query dentro de um stylesheet */
+@media (max-width: 576px) /*dispositivos até 576px - celulares*/ { 
+    header {
+        display: block; /*retira o flex do header*/
+    }
+    header h1 {
+        text-align: center;
+        margin: 5vw 0 5vw 0;
+        
+    }
+    header nav ul {
+       flex-wrap: wrap; /*quando não tiver mais espaço, o elemento cairá*/
+       justify-content: center;
+    }
+    header nav ul li {
+        width: 40%; /*define os tamanhos de tela dos itens*/
+        margin: 5vw 2vw 5vw 2vw;
+        text-align: center;
+    }
+    main section.banner h1 {
+      font-size: xx-large;
+    }
+    main section.banner h2 {
+        font-size: 2rem;
+        margin: 1vw 4vw 1vw 4vw;
+    }
+    main section.banner p.primeiro {
+        margin: 3.5vw 0 3.5vw 0;
+        font-size: 1rem;
+    }
+    main section.products p.segundo {
+        font-size: 1rem;
+        margin: 0 4vw 0 4vw;
+    }
+    main section.products ul li {
+        width: 90%;
+        margin: 2vw 2vw 2vw 2vw;
+    }
+    main section.build p.terceiro {
+        font-size: 1rem;
+        margin: 1vw 4vw 4vw 4vw;
+        text-align: center;
+    }
+    main section.build div.dividir p.imagem {
+        width: 100%; /*largura da section*/
+        text-align: center;
+        margin: 0 0 0 0;
+    }
+    main section.build div.dividir p.imagem img {
+        width: 80%; /*largura da img*/
+    }
+    main section.build div.dividir {
+        display: block;
+    }
+    main section.build div.dividir div h3{
+        width: 90%;
+        font-size: 1.5rem;
+        margin: 0 auto 0 auto;
+        text-align: center;
+    }
+    main section.build div.dividir div p {
+        font-size: 1rem;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+    footer {
+        padding: 2vw 10vw 2vw 10vw;
+        display:  block;
+        text-align: center;
+    }
+    footer ul {
+        justify-content: center;
+    }
+}
