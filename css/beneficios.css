@@ -76,12 +76,12 @@ section {
 
 /*FORMATAÇÃO SECTION BANNER*/
 
-.banner {
+.topo {
     width: 100%;
     height: auto; /* Ajusta a altura automaticamente de acordo com a imagem */
     text-align: center;
 }
-.banner h1 {
+section.topo h1 {
     color: #19490a;
     font-family: 'Raleway', sans-serif;
     font-size: 3.5rem;
