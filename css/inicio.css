@@ -13,7 +13,17 @@ header {
     position: sticky; top: 0;
     z-index: 1000;
 }
-
+main {
+        background-image: url("https://i.ibb.co/SR85Y1J/strawberries.png");
+        background-position: left 80%; /* Ajusta a posição para o canto inferior esquerdo */
+        background-repeat: no-repeat; /* Evita repetição */
+        background-size: auto; /* Mantém o tamanho original da imagem */
+        min-height: 100vh; /* Garante que o fundo ocupe toda a tela */
+    
+    /* <div class="strawberries">
+                <img src="https://i.ibb.co/SR85Y1J/strawberries.png" alt="strawberries">
+            </div> */
+}
 .container {
     width: 90%;
     max-width: 1200px;
@@ -44,31 +54,21 @@ header {
     font-size: 16px;
     color: #666;
 }
-.vida h1{
+.vida {
+    margin: 40px 0;
+}
+
+.vida h1 {
+    margin: 0 10vw 0 10vw;
     font-size: xx-large;
     color: rgb(201, 52, 52);
-    
 }
-.vida button{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
 
-    background-color: #4CAF50; /* Verde */
-    color: white;
-    border: none;
-    padding: 15px 25px;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  
+.vida button {
+    display: block;
+    margin: 20px auto;
 }
-.vida {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .strawberries{
   position: absolute;
   left: -1vw;
@@ -81,10 +81,12 @@ header {
     justify-content: space-between; 
     margin-top: 20px; 
 }
-.wrap{
+.wrap {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
-
 .image-container{
     display: flex;
     align-items: center;
@@ -263,7 +265,11 @@ header {
         .carousel-caption p {
             font-size: 1em;
         }
-    
+        .carousel img {
+            width: 100%;
+            height: 300px; /* Ajuste conforme necessário */
+            object-fit: cover; /* Para manter o foco sem distorcer */
+          }
         /* Ajustes Gerais */
         .container {
             width: 100%;
