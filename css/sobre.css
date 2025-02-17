@@ -31,7 +31,7 @@ body {
 }
 
 /* Estilos para a seção "Sobre Nós" */
-.sobre {
+.sobre .conteudo {
     padding: 20px;
     text-align: center;
     display: flex;
@@ -72,7 +72,7 @@ align-items: center;
 section.sobre2 div.nossa p {
     text-align: justify;
 }
-.missao, .historia {
+.missao .historia {
     margin: 20px 0;
 }
 
