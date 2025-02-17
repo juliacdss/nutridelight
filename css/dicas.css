@@ -19,7 +19,7 @@ body {
     margin-top: 1em;
   }
   
-  .titles h2 {
+  .titles h1 {
     text-align: center;
     margin: 1vw 0 0 0;
     font-size: 3vw;
@@ -68,7 +68,10 @@ body {
     color: #2a5d2a;
     font-size: 1vw;
   }
-  
+  .bloco {
+    display: flex;
+    justify-content: space-around;
+  }
   .dicas {
     display: flex;
     justify-content: space-between;
