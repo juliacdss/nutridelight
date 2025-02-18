@@ -258,6 +258,12 @@ p.miss {
 
 /* Responsividade para "Nossa Missão" */
 @media (max-width: 576px) {
+    .sobre div.um  p.texto {
+        font-size: 1rem;
+    }
+    .sobre div.conteudo img {
+        width: 110%;
+    }
     .sobre2 {
         padding: 10px;
         text-align: center;
@@ -271,18 +277,6 @@ p.miss {
     .sobre2 .miss {
         font-size: 1rem;
         margin: 0 10px;
-    }
-
-    .sobre2 .limao {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .sobre2 .limao img {
-        width: 80%;
-        max-width: 350px;
-        margin-top: 10px;
     }
 }
 
