@@ -89,6 +89,9 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
   }
+  .item p {
+    font-size: large;
+  }
   
   .item:hover {
     transform: translateY(-3px);
@@ -98,7 +101,7 @@ body {
     width: 50%;
   }
   
-  .item li {
+  .item div {
     display: flex;
   }
   
@@ -204,7 +207,6 @@ body {
   
   .saibamais {
     text-align: center;
-    padding: 0 40vw 0 40vw;
   }
   
   .saibamais p.saiba {
@@ -303,7 +305,7 @@ body {
   
     .titles h1 {
   
-      font-size: larger;
+      font-size: xx-large;
     }
   
     .titles h2 {
@@ -331,13 +333,13 @@ body {
     }
   
     .saibamais li a {
-  
+      text-align: center;
       font-size: large;
       text-align: justify;
     }
   
     .saibamais .saiba {
-  
+      text-align: center;
       font-size: large;
     }
     
