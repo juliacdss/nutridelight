@@ -82,10 +82,10 @@ section {
     text-align: center;
 }
 section.topo h1 {
-    color: #19490a;
-    font-family: 'Raleway', sans-serif;
-    font-size: 3.5rem;
-    margin: 2vw 0 0 0;
+    text-align: center;
+    margin: 1vw 0 0 0;
+    font-size: 3vw;
+    color: #2a5d2a;
     font-weight: bold;
 }
 .banner p{
@@ -108,6 +108,7 @@ section ul {
     list-style-type: disc;
     margin-left: 20px;
     display: flex;
+    list-style: none;
 }
 
 section li {
@@ -152,6 +153,13 @@ section strong {
     justify-content: center; /* Centraliza os itens horizontalmente */
     max-width: 1200px; /* Define uma largura máxima para evitar que os itens fiquem muito espalhados */
     margin: 0 auto; /* Centraliza o container em relação à página */
+}
+.beneficio-container  li.beneficio p {
+    font-size: 1.3rem;
+    font-family: "Raleway", sans-serif;
+}
+.beneficio-container  li.beneficio a {
+    font-size: large;
 }
 
 .fortalecimento {
@@ -347,7 +355,8 @@ strong{
     header {
         display: block; /*retira o flex do header*/
     }
-    header h1 {
+    section.topo h1 {
+        font-size: xx-large;
         text-align: center;
         margin: 5vw 0 5vw 0;
         
