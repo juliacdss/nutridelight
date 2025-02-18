@@ -238,7 +238,11 @@ a {
  .wrap {
     display: flex;
  }
- 
+ ul {
+   list-style-type: none;
+   padding-left: 0; /* Remove o espaçamento à esquerda */
+}
+
  /* RESPONSIVIDADE*/
  
  @media (max-width: 576px) {
