@@ -209,12 +209,14 @@ body {
   
   .saibamais p.saiba {
     font-size: x-large;
+    text-align: center;
   }
   
-  .saibamais p a {
+  .saibamais ul li a {
     text-decoration: none;
     color: #208120;
     font-weight: bold;
+    text-align: center;
   }
   
   .footer {
@@ -309,7 +311,7 @@ body {
       font-size: large;
     }
   
-    .dicas {
+    .dicas li.bloco {
       display: block;
   
     }
@@ -320,9 +322,7 @@ body {
     }
   
     .dicas .item p {
-  
-      font-size: small;
-      
+      font-size: medium;
     }
   
     .dicas .item {
@@ -332,12 +332,13 @@ body {
   
     .saibamais li a {
   
-      font-size: small;
+      font-size: large;
+      text-align: justify;
     }
   
     .saibamais .saiba {
   
-      font-size: small;
+      font-size: large;
     }
     
     .item img {
