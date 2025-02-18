@@ -344,6 +344,11 @@ body {
       max-width: 100px; 
     
     }
+    .item img {
+      width: 40%;
+      margin: 0 auto;  /* Centraliza a imagem */
+      display: block;  /* Certifica-se de que a imagem seja tratada como bloco */
+  }
   
   }
   
@@ -363,4 +368,18 @@ body {
     form fieldset p#envio input {
         padding: 14px;
     }
+    
   }
+
+
+  @media (max-width: 1200px) {
+    .dicas .bloco .item p {
+      font-size: large !important; /* Usando !important para garantir que a regra seja aplicada */
+    }
+  
+    .dicas img {
+      max-width: 90%; /* Remover a barra extra */
+      margin: 10px auto; /* Adiciona espaçamento entre a imagem e os outros elementos */
+    }
+  }
+  

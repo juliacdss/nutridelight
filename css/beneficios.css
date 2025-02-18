@@ -330,6 +330,10 @@ section strong {
         margin: 1vw 0 0 0;
         opacity: 0.8;
     }
+    .beneficio a {
+        color: #004d00;
+        font-weight: bold;
+    }
 img{
     width: 5vw;
   
@@ -404,6 +408,10 @@ strong{
         width: 90%;
         margin: 0 auto 0 auto;
     }
+    .beneficio a {
+        color: #004d00;
+        font-weight: bold;
+    }
     footer {
         padding: 2vw 10vw 2vw 10vw;
         display:  block;
@@ -412,4 +420,15 @@ strong{
     footer ul {
         justify-content: center;
     }
+}
+
+
+
+
+@media (max-width: 1025px){
+   .beneficio a {
+   color: #004d00;
+   font-weight: bold;
+  
+   }
 }
