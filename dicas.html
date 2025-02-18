@@ -171,6 +171,8 @@
                 <p><a href="https://www.todamateria.com.br/alimentacao-saudavel/">Toda Matéria</a></p>
                 <p><a href="https://www.gov.br/saude/pt-br">GOVBR</a></p>
             </div>
+        </section>
+        <section>
             <form action="#">
                 <fieldset>
                     <legend>Calcule seu IMC (Índice de Massa Corporal)!</legend>
@@ -195,19 +197,41 @@
                 btn.addEventListener("click", function (e) {
                     let peso = parseFloat(document.getElementById("peso").value);
                     let altura = parseFloat(document.getElementById("altura").value);
-    
+            
                     // Verificando se os valores são válidos
                     if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
                         alert("Por favor, insira valores válidos para peso e altura.");
                         return;
                     }
-    
+            
                     // Calculando o IMC
-                    let total = (peso / (altura * altura)).toFixed(2);
-    
-                    // Exibindo o resultado
+                    let total = (peso / Math.pow(altura, 2)).toFixed(2); // Correção para calcular o IMC corretamente
+                    
+                    // Classificando o IMC
                     let mensagem = document.getElementById("total");
-                    mensagem.innerText = "Seu IMC é: " + total;
+                    let cor = "";
+                    let classificacao = "";
+            
+                    if (total < 18.5) {
+                        classificacao = "Abaixo do peso";
+                        cor = "#FF6347"; // Tomate
+                    } else if (total <= 24.9) { // Mudança aqui: usamos <= para incluir o valor 24.9
+                        classificacao = "Peso normal";
+                        cor = "#3CB371"; // Verde médio
+                    } else if (total <= 29.9) { // Ajuste para garantir que o sobrepeso só entre até 29.9
+                        classificacao = "Sobrepeso";
+                        cor = "#FFD700"; // Ouro
+                    } else if (total <= 39.9) {
+                        classificacao = "Obesidade";
+                        cor = "#FF4500"; // Laranja escuro
+                    } else {
+                        classificacao = "Obesidade grave";
+                        cor = "#8B0000"; // Vermelho escuro
+                    }
+            
+                    // Exibindo o resultado com a classificação e cor
+                    mensagem.innerHTML = `Seu IMC é: <strong>${total}</strong><br>Classificação: <strong>${classificacao}</strong>`;
+                    mensagem.style.color = cor;
                 });
             </script>
         </section>
