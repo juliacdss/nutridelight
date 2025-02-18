@@ -325,7 +325,7 @@ main {
             object-fit: cover; /* Para manter o foco sem distorcer */
           }
     }
-    @media (max-width: 1450) {
+    @media (max-width: 1450px) {
         main {
             background-image: none;
         }
