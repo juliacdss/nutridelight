@@ -319,4 +319,9 @@ main {
         main {
             background-image: none;
         }
+        .carousel img {
+            width: 100%;
+            height: 300px; /* Ajuste conforme necessário */
+            object-fit: cover; /* Para manter o foco sem distorcer */
+          }
     }
