@@ -256,46 +256,6 @@ p.miss {
     opacity: 0.8;
 }
 
-/* @media (max-width: 576px) {
-        html {
-            border-radius: 2vw;
-            text-decoration: none;
-            font-family: "Raleway", sans-serif;
-        }
-
-        html ul li h2 {
-            text-decoration: none;
-            background-color: #3b773b;
-            color: white;
-            padding: 1vw;
-            margin-right: 25vw;
-            border-radius: 2vw;
-            font-weight: bold;
-        }
-        html ul li{
-            list-style: none;
-        }
-        html ul li h2 p {
-            font-size: larger;
-            text-decoration: none;
-            
-        }
-        h2:hover{
-            background-color: #294e29;
-        }
-        p{
-            background-color: #8ecc8e;
-            border-radius: 2vw;
-            margin-right: 25vw ;
-            padding: 1.5vw 1vw 1.5vw 1vw;
-        }
-        ul li p {
-            display: none;
-        }
-        
-    }*/
-
-
 /* Responsividade para "Nossa Missão" */
 @media (max-width: 576px) {
     .sobre2 {
@@ -362,50 +322,15 @@ p.miss {
         margin-bottom: 2px;
         /* Espaçamento entre as fotos */
     }
-
-
-    /* Nomes dos membros da equipe */
-    .nomes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-        text-align: center;
-        /* Centralizando os nomes */
-        margin: 0 0 0 15vw;
-    }
-
-    .nomes h3 {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-        font-weight: 600;
-    }
-}
-
-/* Responsividade para os nomes */
-@media (max-width: 576px) {
-    .nomes h3 {
-        font-size: 1rem;
-        margin-bottom: 8px;
-    }
 }
 
 /* Responsividade para "Sobre Nós" */
 @media (max-width: 576px) {
 
-    .sobre div,
     .sobre2 .nossa {
         padding: 0 10px;
         /* Adiciona um pouco de padding para não ficar colado na tela */
     }
-
-    .sobre img,
-    .sobre2 .limao img {
-        max-width: 100%;
-        /* A imagem ocupa toda a largura disponível */
-    }
-
-    .sobre .um p,
     .sobre2 .miss {
         font-size: 1rem;
         /* Ajusta o tamanho da fonte */
@@ -432,18 +357,6 @@ p.miss {
         /* Adiciona uma margem à esquerda para mover o título para a direita */
     }
 
-    .sobre2 .limao img {
-        width: 100%;
-        /* Torna a imagem responsiva */
-        max-width: 300px;
-        /* Limita o tamanho máximo para dispositivos pequenos */
-    }
-
-    .sobre2 .limao {
-        display: none;
-        /* Remove a imagem */
-    }
-
     /* Responsividade para o parágrafo */
     .sobre2 .nossa .miss {
         margin-left: 30px;
@@ -466,12 +379,12 @@ p.miss {
     section.sobre p{
       font-size: 2vw;
     }
-   .membro  h3{
-    font-size: 3vw;
-   }
-   .membro  p{
-      font-size: 2vw;
-     }
+    ul.equipe li.membro h3 {
+        font-size: 1.5rem;
+    }
+    ul.equipe li.membro p {
+        font-size: 1rem;
+    }
     section.sobre h1{
         font-size: xx-large;
     }
