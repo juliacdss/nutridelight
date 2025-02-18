@@ -279,6 +279,37 @@ a {
    .janta .dish:nth-last-child(-n+2) {
     display: none;
  }
- 
+ }
+ @media (max-width: 1050px) {
+   .gallery {
+      display:block;
+      list-style: none;
+      
+   }
+   .gallery ul {
+      list-style: none;
+
+  }
+   .dish {
+      margin: 5px;
+   }
    
+   .dish-img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+   }
+
+   .container-cafe-lanche {
+      display: flex;
+   }
+   .wrap {
+      display: flex;
+   }
+   .almoco .dish:nth-last-child(-n+2) {
+      display: none;
+  }
+  .janta .dish:nth-last-child(-n+2) {
+   display: none;
+}
  }
