@@ -451,9 +451,62 @@ p.miss {
     }
   
 }
+@media (max-width: 860px){
+   section.sobre{
+    margin: 0 5vw 0 0;
+   }
+    section.sobre2{
+      background-image: none;
+      margin: 0 0 0 8vw;
+    }
+  
+    section.sobre2 p{
+      font-size: 2vw;
+    }
+    section.sobre p{
+      font-size: 2vw;
+    }
+   .membro  h3{
+    font-size: 3vw;
+   }
+   .membro  p{
+      font-size: 2vw;
+     }
+    section.sobre h1{
+        font-size: xx-large;
+    }
+  
+  }
+  
+
+
 
 @media (max-width: 1050px){
-    section.sobre2{
-        background-image: none;
-     }
+    section.sobre{
+       
+        margin: 0 5vw 0 0;
+      }
+    
+  section.sobre2{
+    background-image: none;
+    margin: 0 0 0 9vw;
+  }
+
+  section.sobre2 p{
+    font-size: xx-large;
+  }
+  section.sobre p{
+    font-size: xx-large;
+  }
+ .membro  h3{
+  font-size: 3vw;
+ }
+ .membro  p{
+    font-size: 2vw;
+   }
+   h1{
+    font-size: xx-large;
+}
+
+
 }
