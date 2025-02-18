@@ -19,10 +19,6 @@ main {
         background-repeat: no-repeat; /* Evita repetição */
         background-size: auto; /* Mantém o tamanho original da imagem */
         min-height: 100vh; /* Garante que o fundo ocupe toda a tela */
-    
-    /* <div class="strawberries">
-                <img src="https://i.ibb.co/SR85Y1J/strawberries.png" alt="strawberries">
-            </div> */
 }
 .container {
     width: 90%;
@@ -299,8 +295,8 @@ main {
             font-size: 0.9em;
         }
     
-        .strawberries {
-            display: none; /* Oculta a imagem lateral */
+        main {
+           background-image: none;
         }
     
         .footer {
@@ -320,8 +316,7 @@ main {
         }
     }
     @media (max-width: 1025px){
-        .strawberries {
-            display: none; /* Oculta a imagem lateral */
+        main {
+            background-image: none;
         }
-    
     }
